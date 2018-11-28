@@ -7,38 +7,82 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Subsection</li>
+    </ol>
+  </div>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Service name goes here</h1>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+        <p class="govuk-body">Use this service to:</p>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>do something</li>
+          <li>update your name, address or other details</li>
+          <li>do something else</li>
+        </ul>
 
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+        <p class="govuk-body">Registering takes around 5 minutes.</p>
 
-      <a href="/fractions-one" role="button" draggable="false" class="govuk-button govuk-button--start">
-        Start now
-      </a>
-    </div>
+        <a href="#" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
 
-      <div class="govuk-grid-column-one-third">
-        <h2 class="govuk-heading-m">Want to speak to an adviser?</h2>
-        <p class="govuk-body " style="margin-bottom: 0px;"><strong>Call </strong>0800 100 900 or <a style="white-space: nowrap;" href="https://cxdirect.serco.com/visitor/EntryPage.htm" rel="external" target="'_blank'">use webchat</a></p>
-        <p class="grey font-xs">8am to 10pm, 7 days a week</p>
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+        <p class="govuk-body">You can also
+          <a class="govuk-link" href="#">register by post</a>.</p>
+
+        <p class="govuk-body">The online service is also available in
+          <a class="govuk-link" href="#">Welsh (Cymraeg)</a>.</p>
+
+        <p class="govuk-body">You cannot register for this service if you’re in the UK illegally.</p>
       </div>
 
+      <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Subsection
+          </h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="#">
+                  Related link
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="#">
+                  Related link
+                </a>
+              </li>
+              <li>
+                <a href="#" class="govuk-link govuk-!-font-weight-bold">
+                  More
+                  <span class="govuk-visually-hidden">in Subsection</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div>
+  </main>
 </div>
 
 {% endblock %}
