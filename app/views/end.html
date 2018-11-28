@@ -38,8 +38,11 @@
           </a>
         </li>
       </ul>
-      <a href="/fractions-three" role="button" draggable="false" class="govuk-button">
-        Next
+      <a href="/" role="button" draggable="false" class="govuk-button">
+        Restart
+      </a>
+      <a href="#" onClick="goBack()" draggable="false" >
+        Go back a step
       </a>
     </div>
 
@@ -48,9 +51,10 @@
         <p class="govuk-body " style="margin-bottom: 0px;"><strong>Call </strong>0800 100 900 or <a style="white-space: nowrap;" href="https://cxdirect.serco.com/visitor/EntryPage.htm" rel="external" target="'_blank'">use webchat</a></p>
         <p class="grey font-xs">8am to 10pm, 7 days a week</p>
       </div>
-      <a href="/fractions-three" role="button" draggable="false" class="govuk-button">
-        Next
-      </a>
 </div>
-
+<script type="text/javascript">
+  function goBack() {
+    window.history.back();
+}
+</script>
 {% endblock %}
