@@ -5,5 +5,5 @@ deploy:
   provider: azure_web_apps
   username: nrsproto1       # If AZURE_WA_USERNAME isn't set
   password: nrsproto1   # If AZURE_WA_PASSWORD isn't set
-  site: https://nrsproto1.scm.azurewebsites.net:443       # If AZURE_WA_SITE isn't set
+  site: nrsproto1       # If AZURE_WA_SITE isn't set
   verbose: true
