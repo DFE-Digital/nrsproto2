@@ -1,51 +1,64 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  Understanding the numbers in a fraction | Learning about fractions
 {% endblock %}
 
 {% block content %}
-
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Functional maths skills</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Your lessons</li>
+    </ol>
+  </div>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+
+      <span class="govuk-caption-xl">Challenge 2 out of 3</span>
+      <h2 class="govuk-heading-xl">Understanding the numbers in a fraction</h2>
+      <p class="govuk-body">
+        Think about folding a piece of paper.
+      </p>
+      <p class="govuk-body">
+        Look at the pictures below.
+      </p>
+      <p class="govuk-body">Picture a)</p>
+      <img style="width:100%; margin-bottom:2em;" src="{{ asset_path }}images/paper.png" alt="folding paper into two parts">
+      <p class="govuk-body">Picture b)</p>
+      <img style="width:100%; margin-bottom:2em;" src="{{ asset_path }}images/failed.png" alt="Image has failed to load">
+      <h2 class="govuk-heading-m">Question</h2>
+      <p class="govuk-body">
+        In picture a) the paper is divided into two equal parts, each piece is half of the original. This fraction is written as <sup>1</sup>&frasl;<sub>2</sub>
+and read as ‘one-half’.
+      </p>
+      <p class="govuk-body">
+        Think about how many parts the paper is divided into in picture b) and how you would write one piece as a fraction.
       </p>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
-
-      <h2 class="govuk-heading-m">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it. You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="/docs/tutorials-and-examples">Example pages and documentation</a>
-        </li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            View the answer
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          The paper would be divided into four equal parts, each piece is a forth of the original. This fraction is written as <sup>1</sup>&frasl;<sub>4</sub> and read as 'one-forth'.
+        </div>
+      </details>
       <a href="/fractions-three" role="button" draggable="false" class="govuk-button">
-        Next
+        Next lesson
       </a>
     </div>
-
     {% block webchat %}
       {% include "includes/webchat.html" %}
     {% endblock %}
+
   </div>
 
 {% endblock %}
