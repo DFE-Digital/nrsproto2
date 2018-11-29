@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Learning about fractions
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Functional maths skills</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Your lessons</li>
+      </ol>
+    </div>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Learning about fractions</h1>
+
+          <p class="govuk-body">Use this module to:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>learn about what a fraction is</li>
+            <li>look at different types of fraction</li>
+          </ul>
+
+          <a href="./fractions-one" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+            Start the module
+          </a>
+
+        </div>
+
+        {% block webchat %}
+          {% include "includes/webchat.html" %}
+        {% endblock %}
+
+      </div>
+    </main>
+  </div>
+
+{% endblock %}
